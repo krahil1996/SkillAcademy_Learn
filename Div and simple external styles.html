@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div and simple external styles</title>
+    <link rel="icon" href="/Images/icons-hero.png">
+    <style>
+        .content{
+            background-color: lightblue
+        }
+        .highlights{
+            color: red;
+        }
+        .table{
+            background-color: lightgreen;
+        }
+        .rank{
+            background-color:lightpink
+        }
+        .list{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- content with highlights -->
+        <div class="content">
+            <h1>Running Champions</h1>
+            <p>In our school we conducted <span class="highlights">Intra school Running Competions</span>, where students from all school participated Some of our student have won the competitions. List of students <span class="highlights">who won the competions</span> are as follows:</p>    
+        </div>
+    </div>
+    <!-- division for table -->
+    <div class="table">
+        <table width="400px" border="1">
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Grade</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>7</td>
+            </tr>
+        </table>
+    </div>
+    <!-- division for Rank list -->
+    <div class="rank">
+        <p style="font-weight: bold;">Rank of winners can be seen in the following list</p>
+        <ol>
+            <li>Jack Wills</li>
+            <li>Jill Smith</li>
+            <li>Mark William</li>
+            <li>Eve Jackson</li>
+        </ol>
+    </div>
+    <hr>
+    <!-- division for Portfolio using <div> and <span> -->
+    <div style="text-align: center;">
+        <h1 style="font-style: italic;" ><span><u>Portfolio using div and span</u></span></h1>
+    </div>
+    <div class="content">
+        <h3>Hi I'm Kunal</h3>
+    </div>
+    <div class="table">
+        <h3>About me</h3>
+        <p>Thanks for visiting my web page. My name is Kunal. I've completed my graduation in the year <span class="highlights">2019</span> in the stream <span class="highlights">Electronics and communication Engineering</span>in <span class="highlights">IIT Roorkee.</span></p>
+    </div>
+    <div class="rank">
+        <h3>My Experience</h3>
+        <p>Right after my graduation I started my career as a <span class="highlights">Software Engneer</span>.As a Software Engineer I've a work experience of 2.8 years.</p>
+    </div>
+    <div class="list">
+        <h3>My skill set</h3>
+        <ol>
+            <li>HTML, CSS, JS</li>
+            <li>React</li>
+            <li>Python Flask</li>
+            <li>Database</li>
+        </ol>
+    </div>
+    <div class="content">
+        <h3>My hobbies</h3>
+        <ul>
+            <li>Drawing</li>
+            <li>Photography</li>
+            <li>Design</li>
+            <li>Programming</li>
+            <li>Computer Science</li>
+        </ul>
+    </div>
+</body>
+</html>
