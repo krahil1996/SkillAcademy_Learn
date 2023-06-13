@@ -2,9 +2,9 @@ h2{
     color:blue;
     background-color: rgb(255, 230, 130);    
 }
-/* p{
-    background-color: azure;
-} */
+p{
+    background-color: rgb(100, 199, 238);
+}
 .container{
     background-color: rgb(92, 92, 189);
     width: 600px;
