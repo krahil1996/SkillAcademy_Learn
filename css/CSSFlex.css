@@ -8,15 +8,15 @@
     /* flex-wrap: wrap; */
     flex-flow: row wrap;
     /* justify-content: space-evenly; */
-    align-items: center;
+    /* align-items: right; */
 
 }
 .item{
-    background-color: rgb(226, 130, 130);
+    background-color: rgb(39, 39, 39);
     color: white;
     padding: 10px 15px;
     margin: 10px 10px;
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
     border-radius: 3px;
 }
