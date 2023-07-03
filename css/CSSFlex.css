@@ -1,6 +1,6 @@
 .container{
     background-color: rgb(230, 227, 227);
-    padding: 15px;
+    padding: 10px;
     display: flex;
     /* flex-direction: column-reverse; */
     /* flex-wrap: nowrap; */
@@ -12,11 +12,19 @@
 
 }
 .item{
-    background-color: rgb(39, 39, 39);
+    background-color: rgb(230, 112, 112);
     color: white;
-    padding: 10px 15px;
-    margin: 10px 10px;
-    height: 200px;
+    padding: 100px 10px 5px 10px;
+    margin: 10px;
+    height: 120px;
     width: 200px;
+    border: 5px solid rgb(236, 206, 150);
     border-radius: 3px;
+    text-shadow: 25px;
+    text-decoration-line: overline underline;
+    text-overflow: ellipsis;
+    text-shadow: 200px;
+    font-size: 20px;
+    text-align: center;
+    
 }
