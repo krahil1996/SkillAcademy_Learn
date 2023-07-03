@@ -9,8 +9,7 @@
     <style>
         .container {
             display: inline-flex;
-            column-gap: 25px;
-
+            gap: 15px;
         }
 
         img {
@@ -27,44 +26,72 @@
 
         .borderstyle {
             width: 700px;
-            height: 550px;            
+            height: 550px;
             border: 2px solid rgb(0, 0, 0);
             margin-left: 8px;
             padding-left: 10px;
+            padding-right: 10px;
         }
-        .dotted{
+
+        .dotted {
             border: 2px dotted;
         }
-        .dashed{
+
+        .dashed {
             border: 2px dashed;
         }
-        .solid{
-            border:2px solid;
+
+        .solid {
+            border: 2px solid;
         }
-        .double{
-            border: 2px double ;
+
+        .double {
+            border: 2px double;
         }
-        .groove{
+
+        .groove {
             border: 2px groove;
         }
-        .ridge{
+
+        .ridge {
             border: 2px ridge;
         }
-        .inset{
+
+        .inset {
             border: 2px inset;
         }
-        .outset{
+
+        .outset {
             border: 2px outset;
         }
-        .none{
+
+        .none {
             border: 2px none;
         }
-        .hidden{
+
+        .hidden {
             border: 2px hidden;
         }
-        .mix{
+
+        .mix {
             border: 2px;
-            border-style: dotted dashed solid double;
+            border-style: dotted solid dashed double;
+        }
+
+        .margin {
+            margin: 0px;
+            padding: 5px;
+            border: solid 2px gray;
+
+        }
+
+        p.margin {
+            margin: 150px 10px 0px 40px
+        }
+        .div{
+            border: gray solid 2px;
+            padding: 50px;
+
         }
     </style>
 </head>
@@ -92,6 +119,17 @@
             <p class="none">No border/None.</p>
             <p class="hidden">A hidden border.</p>
             <p class="mix">A mixed border.</p>
+        </div>
+        <div class="margin">
+            <h1>The margin shorhand property</h1>
+            <p class="margin">This p element has a top margin of 25px, a right margin of 50px, a bottom margin of 75px,
+                and a left margin of 100px</p>
+        </div>
+        <div >
+            <h2>Using individual padding properties</h2>
+            <div class="div">This div element has a top padding of 50px, a right padding of 30px, abottom padding of 50px, and a
+                left
+                padding of 80px.</div>
         </div>
     </div>
 </body>
