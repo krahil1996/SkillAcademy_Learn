@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float display</title>
+    <style>
+        h2 {
+            color: blue;
+            font-size: 2rem;
+        }
+        
+        #textdirenction {
+            direction: rtl;
+            unicode-bidi: bidi-override;         
+        }
+        #simple{
+            text-align: center;
+            text-decoration: underline red double;
+        }
+        #shadow{
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-shadow: 2px 2px 5px red;
+        }
+        p > .times{
+            font-family: 'Times New Roman';
+        }
+        p + .arial{
+            font-family:Arial;
+            font-style: italic;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="font-weight: bolder; text-align: center; background-color: whitesmoke;">
+        Text
+    </h1>
+    <h2>About me</h2>
+    <p id="textdirenction">My name is jhon</p>
+    <p id="simple">I've completed my graduation in Computer Science Engineering</p>
+    <p id="shadow">I love Coding</p>
+
+    <h1 style="font-weight: bolder; text-align: center; background-color: whitesmoke;">
+        Font
+    </h1>
+    <h2>CSS font-family</h2>
+    <p class="times">This is a pragraph, shown in the Times New Roman font</p>
+    <p class="arial">This is a pragraph, shown in the Arial font</p>
+
+</body>
+
+</html>
