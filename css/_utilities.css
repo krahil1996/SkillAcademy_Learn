@@ -1,0 +1,21 @@
+/* variable defined */
+:root{
+    --background-color: black;
+    --textcolor: white;
+    --gridfont:sans-sarif;
+
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    color: var(--textcolor);
+    font-family: var(--gridfont);
+}
+.grid-item{
+    padding: 20px 15px;
+    background-color: darkcyan;
+    border: 1px solid var(--textcolor);
+    
+}
