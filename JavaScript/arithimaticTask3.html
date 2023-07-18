@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>arithimaticTask3</title>
+</head>
+<style>
+    b {
+        background-color: rgb(135, 214, 214);
+    }
+</style>
+
+<body>
+    <h1>Task -3 (Simple Interest) </h1>
+    <script>
+        const principalAmt = prompt("Enter Principal Amount");
+        const rateofIntrest = prompt("Enter Rate of Interest");
+        const Time = prompt("Enter Years");
+        const pm = parseFloat(principalAmt)
+        const ri = parseFloat(rateofIntrest)
+        const n = parseFloat(Time)
+        const SI = (pm * ri * n)
+        // print result
+        document.write("<b>The Simple Interest is</b>: = " + SI);
+        
+    </script>
+</body>
+
+</html>
