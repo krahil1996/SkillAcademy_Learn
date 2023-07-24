@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parameterized_Function</title>
+</head>
+
+<body>
+    <script>
+        let name = "<b>Rahil Khan</b>"
+        function welcome(name) {
+            document.write(`welcome ${name}`)
+        }
+        function add(num1, num2) {
+            return num1 + num2;
+        }
+        function sub(num1, num2) {
+            return num1 - num2;
+        }
+        function mul(num1, num2) {
+            return num1 * num2;
+        }
+
+        welcome(name);
+        document.write(`<br> Addition :` + add(12, 34))
+        document.write(`<br> Subtraction :` + sub(12, 34))
+        document.write(`<br> Multification :` + mul(12, 34))
+    </script>
+
+    <script>
+        
+        let area_line = ("<b>The Area of Circle is :");
+        function radius(radius, pai) {
+            return radius * radius;
+        }
+        function pai (radius, pai) {
+            return pai; 
+        }
+       
+        document.write(` <hr> <br> ${area_line}`);
+        document.write (radius(10)* 3.14);
+
+        
+
+
+
+
+    </script>
+
+</body>
+
+</html>
