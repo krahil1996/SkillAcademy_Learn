@@ -30,25 +30,38 @@
     </script>
 
     <script>
-        
+
         let area_line = ("<b>The Area of Circle is :");
         function radius(radius, pai) {
             return radius * radius;
         }
-        function pai (radius, pai) {
-            return pai; 
+        function pai(radius, pai) {
+            return pai;
         }
-       
+
         document.write(` <hr> <br> ${area_line}`);
-        document.write (radius(10)* 3.14);
-
-        
-
-
-
+        document.write(radius(10) * 3.14);
 
     </script>
 
+    <script>
+        let area_rectangle = "<br> The Area of Rectangle is : "
+        let perimeter = "<br> The Perimeter of Rectangle is : "
+        let width = parseInt(prompt("please enter width"));
+        let lenght = parseInt(prompt("please enter lenght"));
+        function r_area(width, lenght) {
+            return width * lenght;
+        }
+        function r_perimeter(width, lenght) {
+            return 2 * (width + lenght);
+        }
+        document.write(area_rectangle + r_area(width, lenght));
+        document.write(perimeter + r_perimeter(width, lenght));
+    </script>
+
+    <script>
+
+    </script>
 </body>
 
 </html>
