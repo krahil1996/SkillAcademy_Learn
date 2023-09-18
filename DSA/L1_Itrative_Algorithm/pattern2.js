@@ -1,7 +1,7 @@
 var n = 5;
-for (var i = 1; i <= n; i++) {
+for (var i = n; i >= 1; i--) {
     var s = "";
-    for (var j = 1; j <= i; j++) {
+    for (var j = i; j >= 1; j--) {
         s += "*";
     }
     console.log(s);
