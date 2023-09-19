@@ -5,5 +5,4 @@ for (let i = n; i >= 1; i--) {
     s += "*";
   }
   console.log(s);
-  
 }
