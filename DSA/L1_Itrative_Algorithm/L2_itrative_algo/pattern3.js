@@ -1,12 +1,10 @@
 var n = 5;
 for (var i = 1; i <= n; i++) {
     var s = "";
-    var stars = i;
-    var spaces = n - i;
-    for (var j = 1; j <= spaces; j++) {
+    for (var j = 1; j <= (n - i); j++) {
         s += " ";
     }
-    for (var j = 1; j <= stars; j++) {
+    for (var j = 1; j <= i; j++) {
         s += "*";
     }
     console.log(s);
