@@ -13,7 +13,7 @@ for (let i = 1; i <= n; i++) {
   for (let j = 1; j <= stars; j++) {
     s += "*";
   }
-  // second half of spaces - I ill not be printing spaces
+  // second half of spaces - we will not be printing spaces
   console.log(s);
   if (i <= n / 2) {
     stars -= 2;
