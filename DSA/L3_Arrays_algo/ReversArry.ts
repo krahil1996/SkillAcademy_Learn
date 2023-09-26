@@ -19,8 +19,3 @@ function reverswholearray(arr: number[]): void {
 }
 reverswholearray(arr);
 console.log(arr);
-// function revers(arr, sourceIndex, destinationIndex){
-//   let temp = arr[destinationIndex];
-//   arr[destinationIndex] = arr[sourceIndex];
-//   arr[sourceIndex] = temp;
-// }
