@@ -9,8 +9,8 @@ function swap(arr: number[], l, r) {
 }
 function reverswholearray(arr: number[]): void {
   let n = arr.length;
-  let l = 0;
-  let r = n - 1;
+  let l = 2;
+  let r = n - 3;
   while (l < r) {
     swap(arr, l, r);
     l++;

@@ -8,8 +8,8 @@ function swap(arr, l, r) {
 }
 function reverswholearray(arr) {
     var n = arr.length;
-    var l = 0;
-    var r = n - 1;
+    var l = 2;
+    var r = n - 3;
     while (l < r) {
         swap(arr, l, r);
         l++;
