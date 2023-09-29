@@ -1,4 +1,4 @@
-var arr = [4, 7, 6, 2, 10, 3, 5,];
+let arr = [4, 7, 6, 2, 10, 3, 5,];
 function maxEle(arr) {
     var n = arr.length;
     var maxi = -Infinity;
