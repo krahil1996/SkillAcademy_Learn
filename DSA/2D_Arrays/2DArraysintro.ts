@@ -30,11 +30,18 @@ function zigZag(arr: number[][]) {
     if (i % 2 == 0) {
       //Even row
       for (let j = 0; j < arr[i].length; j++) console.log(arr[i][j]);
-    } else {
+    } else { //odd row
       for (let j = arr[i].length - 1; j >= 0; j--) console.log(arr[i][j]);
       
     }
   }
 }
+function iteration4(arr : number [] []){
+    for (let j = 0; j < arr[0].length; j++){
+        for (let i = arr.length - 1; i >= 0; i--){
+console.log (arr[i][j]);
+        }
+    }
+}
 
-zigZag(arr);
+iteration4(arr);

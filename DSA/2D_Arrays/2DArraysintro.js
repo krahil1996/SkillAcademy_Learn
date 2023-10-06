@@ -38,4 +38,11 @@ function zigZag(arr) {
         }
     }
 }
-zigZag(arr);
+function iteration4(arr) {
+    for (var j = 0; j < arr[0].length; j++) {
+        for (var i = arr.length - 1; i >= 0; i--) {
+            console.log(arr[i][j]);
+        }
+    }
+}
+iteration4(arr);
