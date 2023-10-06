@@ -19,10 +19,22 @@ function iteration2(arr: number[][]) {
   }
 }
 function iteration3(arr: number[][]) {
-  for (let i = arr.length-1; i <= 0; i++) {
+  for (let i = arr.length - 1; i >= 0; i--) {
     for (let j = arr[i].length - 1; j >= 0; j--) {
       console.log(arr[i][j]);
     }
   }
 }
-iteration3(arr);
+function zigZag(arr: number[][]) {
+  for (let i = 0; i < arr.length; i++) {
+    if (i % 2 == 0) {
+      //Even row
+      for (let j = 0; j < arr[i].length; j++) console.log(arr[i][j]);
+    } else {
+      for (let j = arr[i].length - 1; j >= 0; j--) console.log(arr[i][j]);
+      
+    }
+  }
+}
+
+zigZag(arr);

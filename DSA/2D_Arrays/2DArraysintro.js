@@ -18,4 +18,24 @@ function iteration2(arr) {
         }
     }
 }
-iteration2(arr);
+function iteration3(arr) {
+    for (var i = arr.length - 1; i >= 0; i--) {
+        for (var j = arr[i].length - 1; j >= 0; j--) {
+            console.log(arr[i][j]);
+        }
+    }
+}
+function zigZag(arr) {
+    for (var i = 0; i < arr.length; i++) {
+        if (i % 2 == 0) {
+            //Even row
+            for (var j = 0; j < arr[i].length; j++)
+                console.log(arr[i][j]);
+        }
+        else {
+            for (var j = arr[i].length - 1; j >= 0; j--)
+                console.log(arr[i][j]);
+        }
+    }
+}
+zigZag(arr);
