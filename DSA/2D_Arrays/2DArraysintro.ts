@@ -18,4 +18,11 @@ function iteration2(arr: number[][]) {
     }
   }
 }
-iteration2(arr);
+function iteration3(arr: number[][]) {
+  for (let i = arr.length-1; i <= 0; i++) {
+    for (let j = arr[i].length - 1; j >= 0; j--) {
+      console.log(arr[i][j]);
+    }
+  }
+}
+iteration3(arr);
