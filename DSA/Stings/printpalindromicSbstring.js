@@ -20,5 +20,4 @@ function printPalindromicSubstring(s) {
         }
     }
 }
-printPalindromicSubstring;
-(s);
+printPalindromicSubstring(s);
