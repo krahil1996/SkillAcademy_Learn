@@ -35,7 +35,7 @@ function exitpoint (arr : number[][]):void {
     //we have to take one step backward so that we are ack inside the matrix
     // Move backward
 
-    if (dir == "R") j--;
+    if (dir == "R") j--; 
     else if (dir =="D") i--; 
     else if (dir == "L") j++;
     else if (dir == "U") i++;
