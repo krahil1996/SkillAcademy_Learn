@@ -1,4 +1,4 @@
-let s: string = "AaBbDCcDefg";
+let S: string = "AaBbDCcDefg";
 
 function ToggleCase(s: string): string {
   let ans: string = "";
