@@ -1,7 +1,7 @@
 function fibonacci(n) {
-    if (n == 0)
+    if (n === 1)
         return 0;
-    if (n == 2)
+    if (n === 2)
         return 1;
     var fnm1 = fibonacci(n - 1);
     var fnm2 = fibonacci(n - 2);
