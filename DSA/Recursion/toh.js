@@ -5,4 +5,4 @@ function toh(n, s, d, h) {
     console.log("move disk ".concat(n, " from ").concat(s, " to ").concat(d));
     toh(n - 1, h, d, s);
 }
-toh(3, "a", "b", "c");
+toh(4, "a", "b", "c");

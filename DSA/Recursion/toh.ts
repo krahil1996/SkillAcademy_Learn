@@ -4,4 +4,4 @@ toh (n-1, s, h, d);
 console.log(`move disk ${n} from ${s} to ${d}`);
 toh (n-1,h,d,s);
 }
-toh (3, "a", "b", "c");
+toh (4, "a", "b", "c");
