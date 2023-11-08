@@ -1,4 +1,4 @@
-function climbStairs(i: number, psf: string, n: number): void {
+function climbStairs(i:number, psf:string, n: number ): void {
   if (n == 0) {
     console.log(psf);
     return;
