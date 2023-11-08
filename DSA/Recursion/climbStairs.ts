@@ -11,4 +11,4 @@ function climbStairs(i: number, psf: string, n: number): void {
   climbStairs(i + 2, psf + "2 ", n);
   climbStairs(i + 3, psf + "3 ", n);
 }
-climbStairs(0, " ", 4);
+climbStairs(0, "", 4);
