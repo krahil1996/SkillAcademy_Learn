@@ -1,14 +1,24 @@
-function climbStairs(i:number, psf:string, n: number ): void {
-  if (n == 0) {
+function climbStair(i:number, psf:String, n:number):void {
+  if (i === n) {
     console.log(psf);
     return;
   }
   if (i > n) {
     return;
   }
-  //options
-  climbStairs(i + 1, psf + "1 ", n);
-  climbStairs(i + 2, psf + "2 ", n);
-  climbStairs(i + 3, psf + "3 ", n);
+  climbStair(i + 1, psf + " 1", n);
+  climbStair(i + 2, psf + " 2", n);
+  climbStair(i + 3, psf + " 3", n);
 }
-climbStairs(0, "", 4);
+function countWaysToClimbStairs(i:number, n:number) : number {
+if (i == n) return 1;
+if (i > n) return 0;
+
+let oneJump = countWaysToClimbStairs(i+1, n);
+let twoJump = countWaysToClimbStairs(i+2, n); 
+let threeJump = countWaysToClimbStairs(i+3 , n);
+
+return oneJump + twoJump + threeJump;
+}
+climbStair(0, "", 4);
+console.log (countWaysToClimbStairs(0,4));
