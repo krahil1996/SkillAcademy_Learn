@@ -1,0 +1,6 @@
+this is the text file
+line again
+line again
+line again
+line again
+line again
