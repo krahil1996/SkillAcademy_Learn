@@ -37,6 +37,7 @@ server.listen(port, () => {
 
 const { prototype } = require("events");
 const http = require("http");
+const fs = require('fs');
 const port = 3500;
 const server = http.createServer((req, res) => {
   if (req.url == "/") {
@@ -55,7 +56,7 @@ const server = http.createServer((req, res) => {
   } 
   // else {
   //   res.statusCode=404;
-  //   res.setHeader('content-type', 'text/html')
+  //   res.setHeader('content-typecls', 'text/html')
   //   res.write("<h2>Can not find Page</h2>");
   //   res.end();
   // }
