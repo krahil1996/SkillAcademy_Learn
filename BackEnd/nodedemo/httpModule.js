@@ -38,7 +38,7 @@ server.listen(port, () => {
 const { prototype } = require("events");
 const http = require("http");
 const fs = require('fs');
-const port = 3500;
+const port = 3600;
 const server = http.createServer((req, res) => {
   if (req.url == "/") {
     res.write("<h1>Sever has been created and Connected !");
@@ -51,7 +51,7 @@ const server = http.createServer((req, res) => {
     res.end();
   }
   else if (req.url == '/htmlfile'){
-    const data=fs.readFileSync('index.html');
+    const data=fs.readFileSync('/index.html');
     res.end(data);
   } 
   // else {

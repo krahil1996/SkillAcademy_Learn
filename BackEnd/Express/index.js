@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 port = 3500;
+const path = require("path");
 
 app.get("/", (req, res) => {
   res.send("<b>Hello from Express</b>");
@@ -13,6 +14,10 @@ app.get("/contact", (req,res)=>{
 app.get("/about", (req, res) => {
   res.send("About File");
 });
+
+app.get("/demoindex", (req, res) => {
+    res.sendFile(path.join(__dirname, "/DemoIndex.html"));
+})
 
 app.listen(port, ()=>{
     console.log(`Server started and listing on Port ${port}`);
