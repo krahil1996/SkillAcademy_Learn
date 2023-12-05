@@ -3,7 +3,12 @@ const app = express();
 port = 3500;
 const path = require("path");
 
-app.use(express.static(path.join(__dirname, "public")))
+// app.use(express.static(path.join(__dirname, "public")))
+app.use('/publicindex',express.static(path.join(__dirname, 'public')))
+app.use('/datafile', express.static(path.join(__dirname, 'public/data.html')));
+
+
+
 app.get("/", (req, res) => {
     res.send("<b>Hello from Express</b>");
 });
