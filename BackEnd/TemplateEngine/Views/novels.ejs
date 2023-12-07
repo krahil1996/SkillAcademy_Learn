@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Novels</title>
+  </head>
+  <body>
+    <h1>Novels to Read</h1>
+    <ol>
+      <%novels.forEach(novels => {%>
+      <li><a href="<%=novels.id %>"><%=novels.ntitle %></a></li>
+      <%});%>
+    </ol>
+  </body>
+</html>
