@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EJS File</title>
+    <title>Home</title>
 </head>
 <body>
     <%- include('partials/header') %>
+    <div style="margin-top: 10px; margin-left: 10px; width: auto;">
+        <h2>Home EJS File</h2>
+    </div>
     
+    <%- include('partials/footer') %>
 
-    <h2>Novels List</h2>
-    <ul>
-       <%novels.forEach(novels => {%>
-    <li><%=novels.ntitle%> - <%=novels.price%></li>
-<%});%>
-    </ul>
-<%- include('partials/footer') %>
+    
 </body>
 </html>

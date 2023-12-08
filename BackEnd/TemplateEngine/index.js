@@ -74,7 +74,7 @@ const novels = [
     id: 1,
     ntitle: "To Kill a Mockingbird",
     author: "Harper Lee",
-    price: 15,
+    price: 50,
     summary:
       "A classic novel that addresses racial injustice in the American South.",
     desc: "A classic novel that addresses racial injustice in the American South.",
@@ -83,7 +83,7 @@ const novels = [
     id: 2,
     ntitle: "1984",
     author: "George Orwell",
-    price: 12,
+    price: 100,
     summary:
       "A dystopian novel depicting a totalitarian society and the impact of government surveillance.",
     desc: "A dystopian novel depicting a totalitarian society and the impact of government surveillance.",
@@ -92,7 +92,7 @@ const novels = [
     id: 3,
     ntitle: "Pride and Prejudice",
     author: "Jane Austen",
-    price: 18,
+    price: 120,
     summary:
       "A timeless romance novel exploring themes of class, love, and societal expectations.",
     desc: "A timeless romance novel exploring themes of class, love, and societal expectations.",
@@ -101,7 +101,7 @@ const novels = [
     id: 4,
     ntitle: "The Great Gatsby",
     author: "F. Scott Fitzgerald",
-    price: 20,
+    price: 150,
     summary:
       "Set in the Roaring Twenties, this novel explores themes of wealth, love, and the American Dream.",
     desc: "Set in the Roaring Twenties, this novel explores themes of wealth, love, and the American Dream.",
@@ -110,7 +110,7 @@ const novels = [
     id: 5,
     ntitle: "One Hundred Years of Solitude",
     author: "Gabriel García Márquez",
-    price: 25,
+    price: 199,
     summary:
       "A magical realist novel chronicling the Buendía family across seven generations in the fictional town of Macondo.",
     desc: "A magical realist novel chronicling the Buendía family across seven generations in the fictional town of Macondo.",
@@ -118,8 +118,10 @@ const novels = [
 ];
 
 app.get("/", (req, res) => {
-  res.send("<h1> HOME FILE</h1>");
+  // res.sendFile(path.join(__dirname, "/Views/home.ejs"));
+  res.render("../Views/home.ejs");
 });
+
 
 app.get("/Partials", (req, res) => {
   res.render("Views/header");
@@ -140,7 +142,7 @@ app.get("/novels/:id", (req, res) => {
 });
 
 app.get("/htmldemo", (req, res) => {
-  res.sendFile(path.join(__dirname, "demo.html"));
+  
 });
 
 app.listen(port, () => {
