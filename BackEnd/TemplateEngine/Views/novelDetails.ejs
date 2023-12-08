@@ -6,15 +6,20 @@
     <title>Novel Details</title>
   </head>
   <body>
-    <div>
-      
-      <h1><%=novel.ntitle%></h1>
-      <p><%=novel.author%></p>
-      <p><%=novel.price%></p>
-      <p><%=novel.desc%></p>
-      <h3>Summary</h3>
-      <p><%=novel.summary%></p>
-      
-    </div>
+    <%- include('partials/header') %>
+      <div class="card" style="width: 25rem ; margin:0.5%" >
+        <div class="card-body">
+          <h5 class="card-title"><%=novel.ntitle%></h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary"><span style="font-weight: bold; color: rgb(36, 35, 35);">Author:</span> <%=novel.author%></h6>
+          <p style=" text-align: justify;" class="card-text"> <span style="font-weight: bold;">Description:</span> 
+            <%=novel.desc%>
+          </p>
+          <p style=" text-align: justify;" class="card-text"><span style="font-weight: bold;">Summary:</span>
+            <%=novel.summary%>
+          </p>
+          <h6 style="text-align: right; text-shadow:5cap;">Price: <span class="badge bg-primary"><%=novel.price%> Rs</span></h6>
+        </div>
+      </div>
+    
   </body>
 </html>

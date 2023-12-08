@@ -6,10 +6,11 @@
     <title>Novels</title>
   </head>
   <body>
+    <%- include('partials/header') %>
     <h1>Novels to Read</h1>
     <ol>
       <%novels.forEach(novels => {%>
-      <li><a href="<%=novels.id %>"><%=novels.ntitle %></a></li>
+      <li><a style="text-decoration: none; color:rgb(21, 12, 117);"  href="../novels/<%=novels.id %>"><%=novels.ntitle %></a></li>
       <%});%>
     </ol>
   </body>

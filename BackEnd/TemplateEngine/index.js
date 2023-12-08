@@ -121,8 +121,12 @@ app.get("/", (req, res) => {
   res.send("<h1> HOME FILE</h1>");
 });
 
+app.get("/Partials", (req, res) => {
+  res.render("Views/header");
+});
+
 app.get("/ejsfile1", (req, res) => {
-  res.render("index", { product });
+  res.render("index", { novels });
 });
 
 app.get("/novels", (req, res) => {
@@ -131,9 +135,8 @@ app.get("/novels", (req, res) => {
 
 app.get("/novels/:id", (req, res) => {
   const novelid = parseInt(req.params.id);
-  const novel = novels.find(nov => nov.id === novelid);
+  const novel = novels.find((nov) => nov.id === novelid);
   res.render("novelDetails", { novel });
-  
 });
 
 app.get("/htmldemo", (req, res) => {

@@ -6,12 +6,13 @@
     <title>EJS File</title>
 </head>
 <body>
-    <h1>EJS File</h1>
+    <%- include('partials/header') %>
+    
 
-    <h2>Product List</h2>
+    <h2>Novels List</h2>
     <ul>
-       <%product.forEach(product => {%>
-    <li><%=product.name%> - <%=product.Price%></li>
+       <%novels.forEach(novels => {%>
+    <li><%=novels.ntitle%> - <%=novels.price%></li>
 <%});%>
     </ul>
 
