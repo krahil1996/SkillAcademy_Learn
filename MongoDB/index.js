@@ -1,21 +1,21 @@
 const mongoose = require("mongoose");
 
 mongoose
-  .connect("mongodb://127.0.0.1:27017/batch10testbook")
+  .connect("mongodb://127.0.0.1:27017/MongoDBtest")
   .then(() => console.log("connection is successful"))
   .catch((e) => console.log(e, "connection falied"));
 
-const courseSchema = new mongoose.Schema({
-  title: String,
-  noVideos: Number,
-  cType: String,
-  author: String,
-  active: Boolean,
-});
+// const courseSchema = new mongoose.Schema({
+//   title: String,
+//   noVideos: Number,
+//   cType: String,
+//   author: String,
+//   active: Boolean,
+// });
 
-const courseRecord = new mongoose.model("courseRecord", courseSchema);
+// const courseRecord = new mongoose.model("courseRecord", courseSchema);
 
-//create document
+// create document
 // const Reactdata=new courseRecord({
 //     title:"React Js",
 //     noVideos:47,
