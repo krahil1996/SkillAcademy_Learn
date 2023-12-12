@@ -5,15 +5,15 @@ mongoose
   .then(() => console.log("connection is successful"))
   .catch((e) => console.log(e, "connection falied"));
 
-// const courseSchema = new mongoose.Schema({
-//   title: String,
-//   noVideos: Number,
-//   cType: String,
-//   author: String,
-//   active: Boolean,
-// });
+const courseSchema = new mongoose.Schema({
+  title: String,
+  noVideos: Number,
+  cType: String,
+  author: String,
+  active: Boolean,
+});
 
-// const courseRecord = new mongoose.model("courseRecord", courseSchema);
+const courseRecord = new mongoose.model("courseRecord", courseSchema);
 
 // create document
 // const Reactdata=new courseRecord({
@@ -33,7 +33,8 @@ mongoose
 //             title: "Vue Js",
 //             noVideos: 37,
 //             cType: 'Front End',
-//             active: true
+//             active: true,
+//             author:'Not availble'
 //         })
 //         const result=await Vuedata.save();
 
@@ -82,47 +83,47 @@ mongoose
 //     createDocument();
 
 //one more way
-//     const createDocument = async () => {
-//     try {
-//         const alldata = await courseRecord.create([
-//         {
-//             title: "HTML Js",
-//             noVideos: 27,
-//             cType: 'Front End',
-//             active: true
-//         },
-//        {
-//             title: "Mongodb Js",
-//             noVideos: 30,
-//             cType: 'Database',
-//             active: true
-//         }])
-
-//     }
-//     catch(e){
-//         console.log(e);
-//     }
-// }
+// const createDocument = async () => {
+//   try {
+//     const alldata = await courseRecord.create([
+//       {
+//         title: "HTML Js",
+//         noVideos: 27,
+//         cType: "Front End",
+//         active: true,
+//       },
+//       {
+//         title: "Mongodb Js",
+//         noVideos: 30,
+//         cType: "Database",
+//         active: true,
+//       },
+//     ]);
+//   } catch (e) {
+//     console.log(e);
+//   }
+// };
 // createDocument();
 
 //read queries
 
-// const getDocument=async()=>{
-// try{
-// // const result1=await courseRecord.find();
-// // const result1=await courseRecord.find({title:'Vue Js'},{title:1,_id:0});
-// // const result1=await courseRecord.find({title:'React Js'}).select({title:1,_id:0});
-// // const result1=await courseRecord.find().limit(1).skip(1);
-// // const result1=await courseRecord.find({noVideos:{$gt:30}}).select({_id:0,title:1});
-// // const result1=await courseRecord.find({noVideos:{$gt:30}}).count();
-// const result1=await courseRecord.find({title:/react Js/i}).select({title:1,_id:0});
+// const getDocument = async () => {
+//   try {
+    // const result1=await courseRecord.find();
+    // const result1=await courseRecord.find({title:'Vue Js'},{title:1,_id:0});
+    // const result1=await courseRecord.find({title:'React Js'}).select({title:1,_id:0});
+    // const result1=await courseRecord.find().limit(1).skip(1);
+    // const result1=await courseRecord.find({noVideos:{$gt:30}}).select({_id:0,title:1});
+    // const result1=await courseRecord.find({noVideos:{$gt:30}}).count();
+//     const result1 = await courseRecord
+//       .find({ title: /react Js/i })
+//       .select({ title: 1, _id: 0 });
 
-// console.log(result1);
-// }
-// catch(e){
-// console.log(e);
-// }
-// }
+//     console.log(result1);
+//   } catch (e) {
+//     console.log(e);
+//   }
+// };
 // getDocument();
 
 //update
@@ -138,4 +139,4 @@ const updateDocument = async (_id) => {
     console.log(e);
   }
 };
-updateDocument("6575e2cb3cf0b18da97e6fb9");
+updateDocument("657829454a0f3fd10cf361e2");
