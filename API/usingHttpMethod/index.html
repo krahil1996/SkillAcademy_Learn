@@ -14,7 +14,7 @@
     <button id="searchBooks">Search</button>
 
     <hr />
-    <h2>Heare's what we found</h2>
+    <h2 id="h2"></h2>
     <ul id="booklist"></ul>
 
     <script>
@@ -33,17 +33,19 @@
         // ReadyState =3 when it is processing
         // ReadyState=4 when we recieving response
         myRequest.onreadystatechange = () => {
+          document.getElementById("h2").value="Heare's what we found"
           if (myRequest.readyState == 4 && myRequest.status == 200) {
             var bookData = JSON.parse(myRequest.responseText);
             // console.log(bookData);
             bookData.items.forEach((element) => {
+              
               var book = document.createElement("li");
               book.style.fontWeight = "Bold";
               book.innerHTML = element.volumeInfo.title;
               // console.log (element.volumeInfo.title);
               var booklist = document.getElementById("booklist");
               booklist.appendChild(book);
-              var book = document.createElement("h5");
+              var book = document.createElement('DLJJL', "h5");
               book.innerHTML = element.volumeInfo.authors;
               var booklist_p = document.getElementById("booklist");
               booklist_p.appendChild(book);
@@ -54,6 +56,7 @@
             });
           }
         };
+        
         document.getElementById("userBook").value = "";
       }
     </script>
