@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search book | API Using with HttpMethod</title>
+  </head>
+  <body>
+    <input
+      type="text"
+      id="userBook"
+      placeholder="Enter book name what to search"
+    />
+    <button id="searchBooks">Search</button>
+
+    <hr />
+    <h2>Heare's what we found</h2>
+    <ul id="booklist"></ul>
+
+    <script>
+      var searchBook = document.getElementById("searchBooks");
+      searchBook.addEventListener("click", fetchBooks);
+
+      function fetchBooks() {
+        var userBook = document.getElementById("userBook").value;
+        var myRequest = new XMLHttpRequest(); //readeyState = 0
+        myRequest.open(
+          "GET",
+          "https://www.googleapis.com/books/v1/volumes?q=" + userBook,
+          true
+        ); // state = 1
+        myRequest.send(); // readyState = 2
+        // ReadyState =3 when it is processing
+        // ReadyState=4 when we recieving response
+        myRequest.onreadystatechange = () => {
+          if (myRequest.readyState == 4 && myRequest.status == 200) {
+            var bookData = JSON.parse(myRequest.responseText);
+            // console.log(bookData);
+            bookData.items.forEach((element) => {
+              var book = document.createElement("li");
+              book.style.fontWeight = "Bold";
+              book.innerHTML = element.volumeInfo.title;
+              // console.log (element.volumeInfo.title);
+              var booklist = document.getElementById("booklist");
+              booklist.appendChild(book);
+              var book = document.createElement("h5");
+              book.innerHTML = element.volumeInfo.authors;
+              var booklist_p = document.getElementById("booklist");
+              booklist_p.appendChild(book);
+              var book = document.createElement("p");
+              book.innerHTML = element.volumeInfo.publishedDate;
+              var booklist_p = document.getElementById("booklist");
+              booklist_p.appendChild(book);
+            });
+          }
+        };
+        document.getElementById("userBook").value = "";
+      }
+    </script>
+  </body>
+</html>
